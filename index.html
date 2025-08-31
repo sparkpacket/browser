@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Web Browser</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="browser-container">
+  <div id="browser-toolbar">
+    <input type="text" id="url-bar" placeholder="Enter URL (https://...)">
+    <button id="go-btn">Go</button>
+    <button id="reload-btn"><img src="icons/reload.svg" alt="Reload"></button>
+  </div>
+  <iframe id="browser-frame" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+</div>
+
+<script src="browser.js"></script>
+</body>
+</html>
